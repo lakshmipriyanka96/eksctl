@@ -1,0 +1,10 @@
+apiVersion: ekstcl.io/valpha5
+kind: Clusterconfig
+metadata:
+name: roboshpp-dev
+region: us-east-1
+managedNodeGroups: 
+- name: roboshop-dev
+  instance types: ["t3.micro","t3.medium"]
+  Desiredcapacity: 2
+  spot: true
